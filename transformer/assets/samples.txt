@@ -1,0 +1,30 @@
+Greedy-decoded predictions (input -> prediction, [ok] = exact match)
+
+Test set (lengths 4-16, same distribution as training):
+  wlov             -> volw             [ok]
+  jzrtsbipofwh     -> hwfopibstrzj     [ok]
+  uaecznvh         -> hvnzceau         [ok]
+  xskhfpznydlz     -> zldynzpfhksx     [ok]
+  kyoyrsyofon      -> nofoysryoyk      [ok]
+  bcgrer           -> rergcb           [ok]
+  gppiqmet         -> temqippg         [ok]
+  zqmenh           -> hnemqz           [ok]
+  nkgrzilzqksoq    -> qoskqzlizrgkn    [ok]
+  mrhogktdtczkk    -> kkkzctkgohrm     [WRONG, expected kkzctdtkgohrm]
+  kkrujbzwhwqeit   -> tieqwhwzbjurkk   [ok]
+  ymasqwnc         -> cnwqsamy         [ok]
+  uwyuyhjpmraunujv -> vjunuarmpjhyuywu [ok]
+  wathefodp        -> pdofehtaw        [ok]
+  hwjgwdt          -> tdwgjwh          [ok]
+
+Longer than anything seen in training (lengths 17-24):
+  zsodmkcnuhurhapiy        -> yipahrunckmdosz          [WRONG, expected yipahruhunckmdosz]
+  nhgnrrhnjslokgclgthh     -> tlcgkhjnhrrrnghn         [WRONG, expected hhtglcgkolsjnhrrnghn]
+  johxnlrhuxmuiybdspas     -> sdbyiumxuhrlnxhoj        [WRONG, expected sapsdbyiumxuhrlnxhoj]
+  ppdzczjqeanwvwddu        -> udwvwnaeqjzczdpppppppppppp [WRONG, expected uddwvwnaeqjzczdpp]
+  xtyxzbdlkrbhlvilctx      -> tlivlhbrkldbzxytx        [WRONG, expected xtclivlhbrkldbzxytx]
+  yfyqrwvhmzjbghyccfscbq   -> cyhgbjzmhvwrqyfyfy       [WRONG, expected qbcsfccyhgbjzmhvwrqyfy]
+  fktdsfeaswlnntopue       -> potnnlwsaefsdtkf         [WRONG, expected eupotnnlwsaefsdtkf]
+  oikvknfnthkdmysfwi       -> isymdkhtnfnkvkiooo       [WRONG, expected iwfsymdkhtnfnkvkio]
+  djxvjfezocbpocxlkgqv     -> glxcopbcozefjvxjd        [WRONG, expected vqgklxcopbcozefjvxjd]
+  hcymaubffvigawikbihyrosf -> ikiwagivfbuamych         [WRONG, expected fsoryhibkiwagivffbuamych]
